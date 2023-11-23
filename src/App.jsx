@@ -4,6 +4,7 @@ import { HomePage } from "./pages/Home";
 import { NoPage } from './pages/NoPage';
 import { RegisterPage } from './pages/RegisterPage';
 import { TosPage } from './pages/TosPage';
+import { LoginPage } from './pages/LoginPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route index path='/' element={<HomePage />} />
         <Route path='/services' element={<ServicesPage />} />
         <Route path='/register' element={<RegisterPage />} />
+        <Route path='/login' element={<LoginPage />} />
         <Route path='/tos' element={<TosPage />} />
         <Route path='*' element={<NoPage />} />
       </Routes>

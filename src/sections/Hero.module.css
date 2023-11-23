@@ -1,0 +1,4 @@
+.heroSection {
+    background-image: url('/public/img/hero.jpg');
+    background-size: cover;
+}
