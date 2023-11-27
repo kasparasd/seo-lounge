@@ -1,6 +1,14 @@
+import { useContext } from "react";
 import style from "./Hero.module.css";
+import { GlobalContext } from "../context/GlobalContext";
 
 export function Hero() {
+  const { updateLuckyNumber } = useContext(GlobalContext);
+
+  function primaryBtn() {
+    updateLuckyNumber(7);
+  }
+
   return (
     <div className={style.heroSection}>
       <div className="container px-4 py-5">
@@ -17,6 +25,7 @@ export function Hero() {
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <button
+                onClick={primaryBtn}
                 type="button"
                 className="btn btn-primary btn-lg px-4 me-md-2"
               >

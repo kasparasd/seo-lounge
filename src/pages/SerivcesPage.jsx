@@ -1,15 +1,11 @@
-import { Footer } from "../sections/Footer";
-import { Header } from "../sections/Header";
 import { Services } from "../sections/Services";
 
-export function ServicesPage(){
-    return(
-        <>
-        <Header/>
-        <main>
-            <Services sortBy="price90"/>
-        </main>
-        <Footer/>
-        </>
-    )
+export function ServicesPage() {
+  return (
+    <>
+      <main>
+        <Services sortBy="price90" />
+      </main>
+    </>
+  );
 }

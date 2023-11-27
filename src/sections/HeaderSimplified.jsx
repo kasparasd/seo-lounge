@@ -1,9 +1,6 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { GlobalContext } from "../context/GlobalContext";
 
-export function Header() {
-  const { luckyNumber } = useContext(GlobalContext);
+export function HeaderSimplified() {
   return (
     <div className="container">
       <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
@@ -28,26 +25,7 @@ export function Header() {
               ></path>
             </svg>
           </Link>
-          <span>lucky number: {luckyNumber}</span>
         </div>
-
-        <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li>
-            <Link to="/" className="nav-link px-2 link-danger">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/services" className="nav-link px-2">
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link to="/listing" className="nav-link px-2">
-              Listing
-            </Link>
-          </li>
-        </ul>
 
         <div className="col-md-3 text-end">
           <Link to="/register" className="btn btn-primary">
